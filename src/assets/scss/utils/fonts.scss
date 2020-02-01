@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-weight: 400; //300 light, 500 Medium, 600 Bold
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src:
+	  url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
+	  url('../fonts/MaterialIcons-Regular.woff') format('woff'),
+	  url('../fonts/MaterialIcons-Regular.ttf') format('truetype'),
+	  url('../fonts/MaterialIcons-Regular.svg') format('svg');
+}

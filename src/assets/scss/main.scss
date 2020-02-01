@@ -1,0 +1,43 @@
+@import "/utils/fonts.scss"; //общий стиль
+@import "materials-icons"; //общий стиль
+//@import url(styles-xs.css) (max-width: 768px);
+//@import url(styles-xs.css) (max-width: 320px);
+
+.beco {
+  //display: flex;
+  .beco__inner {
+  }
+}
+
+h1,h2,h3 {
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  font-size: 28rem;
+}
+
+h2 {
+  font-size: 24rem;
+}
+
+h3 {
+  font-size: 18rem;
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 1px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 320px) {
+  html {
+   font-size: 0.8px;
+  }
+}
