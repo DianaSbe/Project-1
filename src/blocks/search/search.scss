@@ -1,0 +1,19 @@
+.search {
+    max-width: 1200rem;
+    height: 52rem;
+    border: 1rem solid rgba(51, 51, 51, 0.2);
+    box-sizing: border-box;
+    border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search__icon {
+        width: 4.5%;
+    }
+    .search__text {
+        width: 90.5%;
+        font-family: 'OpenSans', Arial, sans-serif;
+        font-size: 18rem;
+        color: rgba(0, 0, 0, 0.45);
+    }
+}
