@@ -1,12 +1,13 @@
 @import "/utils/fonts.scss"; //общий стиль
 @import "materials-icons"; //общий стиль
 @import "../../blocks/search/search";
+@import "../../blocks/sidebar/sidebar";
 //@import url(styles-xs.css) (max-width: 
 //@import url(styles-xs.css) (max-width: 768px);
 //@import url(styles-xs.css) (max-width: 320px);
 
 .beco {
-  //display: flex;
+  display: flex;
   .beco__inner {
   }
 }
@@ -33,13 +34,22 @@ h3 {
   html {
     font-size: 1px;
   }
+  .beco__search {
+    width: 1080rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .beco__search {
+    width: 612rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
   html {
    font-size: 0.8px;
+  }
+  .beco__search {
+    width: 267rem;
   }
 }

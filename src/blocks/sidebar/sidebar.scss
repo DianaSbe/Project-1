@@ -1,0 +1,49 @@
+.sidebar {
+    max-width: 240rem;
+    height: 1045rem;
+    background: #F3F4F9;
+    .sidebar__header {
+        display: flex;
+        align-items: center;
+        height: 132rem;
+        .sidebar__logo {
+            width: 50rem;
+            height: 50rem;
+            background: url('/logo-coupon.png') no-repeat center 40%;
+            margin-left: 40rem;
+            margin-right: 10rem;
+        }  
+        .sidebar__title {
+            font-family: 'Conv_Poppins';
+            font-weight: 500;
+            font-size: 16rem;
+            text-transform: uppercase;
+        }
+    }
+    .sidebar__menu {
+        height: 278rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        margin-top: 20rem;
+        .sidebar__item {
+            display: flex;
+            .sidebar__icon {
+                padding-left: 40rem;
+                padding-right: 12rem;
+            }
+            .sidebar__text {
+                font-family: 'OpenSans', Arial, sans-serif;
+                font-weight: 600;
+                font-size: 16rem;
+            }
+            &:active, &:hover, &:focus{
+                color: #34ABE0;
+                border-left: 3rem solid #34ABE0;
+                svg path {
+                    stroke: #34ABE0;
+                }
+            }
+        }
+    }
+}
