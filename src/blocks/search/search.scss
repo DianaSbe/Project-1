@@ -1,4 +1,5 @@
 .search {
+    width: 1080rem;
     height: 52rem;
     border: 1rem solid rgba(51, 51, 51, 0.2);
     box-sizing: border-box;
@@ -6,13 +7,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0rem 13rem;
     .search__icon {
-        width: 4.5%;
+        margin-right: 8rem;
     }
-    .search__text {
-        width: 90.5%;
-        font-family: 'OpenSans', Arial, sans-serif;
-        font-size: 18rem;
-        color: rgba(0, 0, 0, 0.45);
+    .search__form {
+        width: 100%;
+        .search__input {
+            width: 100%;
+            font-family: 'OpenSans', Arial, sans-serif;
+            font-size: 18rem;
+            border: 0rem;
+            outline: none;
+            &::placeholder{
+                color: rgba(0, 0, 0, 0.45);
+            }
+            &::-webkit-search-decoration, 
+            &::-webkit-search-cancel-button, 
+            &::-webkit-search-results-button, 
+            &::-webkit-search-results-decoration {
+                display: none;
+            }
+        }
     }
 }

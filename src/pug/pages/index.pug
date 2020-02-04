@@ -1,5 +1,6 @@
 include ../../blocks/search/search
 include ../../blocks/sidebar/sidebar
+include ../../blocks/coupon/coupon
 
 doctype html
 html(lang="en")
@@ -16,7 +17,21 @@ html(lang="en")
     
   body
     div.beco
-      +sidebar({})
-      div.beco__inner
-        div.beco__search
-          +search({})
+      div.beco__sidebar
+        +sidebar({})
+      div.beco__search
+        h1.beco__title Развлечения
+        +search({})
+      div.beco__coupons
+        +coupon({title: "Пробка на мира", description: "Вечер для двоих", number: "-50%", type: "Скидка", img: "1"})
+        +coupon({title: "Кино и немцы", description: "Бесплатный бокал пива", number: "Варвар", type: "Промокод", img: "2"})
+        +coupon({title: "Valery cakes", description: "Торт", number: "30%", type: "Скидка", img: "3"})
+        +coupon({title: "Sushi sell", description: "Набор \"Праздник\"", number: "45%", type: "Скидка", img: "4"})
+        +coupon({title: "Mangosteen", description: "Фрукт в подарок", number: "J130", type: "Купон", img: "5"})
+        +coupon({title: "Теленок табака", description: "Стейк \"Мачете\"", number: "20%", type: "Скидка", img: "6"})
+        +coupon({title: "Fire food", description: "Вторая шаурма в подарок", number: "Огонь", type: "Промокод", img: "7"})
+        +coupon({title: "Aroma cremeria", description: "Джелато \"Пармезан\"", number: "20%", type: "Скидка", img: "8"})
+        +coupon({title: "Пробка на мира", description: "Вечер для двоих", number: "J130", type: "Купон", img: "1"})
+        +coupon({title: "Кино и немцы", description: "Бесплатный бокал пива", number: "Варвар", type: "Промокод", img: "2"})
+        +coupon({title: "Valery cakes", description: "Торт", number: "30%", type: "Скидка", img: "3"})
+        +coupon({title: "Sushi sell", description: "Набор \"Праздник\"", number: "45%", type: "Скидка", img: "4"})

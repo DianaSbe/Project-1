@@ -1,17 +1,18 @@
 .sidebar {
-    max-width: 240rem;
+    width: 240rem;
     height: 1045rem;
     background: #F3F4F9;
     .sidebar__header {
         display: flex;
         align-items: center;
         height: 132rem;
+        margin-left: 40rem;
         .sidebar__logo {
             width: 50rem;
             height: 50rem;
             background: url('/logo-coupon.png') no-repeat center 40%;
-            margin-left: 40rem;
             margin-right: 10rem;
+            background-size: contain;
         }  
         .sidebar__title {
             font-family: 'Conv_Poppins';

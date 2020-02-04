@@ -2,4 +2,5 @@ mixin search(options)
   div.search
     div.search__icon
       include icon-search.svg
-    label.search__text Какой магазин вам нужен?
+    form.search__form(action="" method="get")
+      input.search__input(name="searching" placeholder="Какой магазин вам нужен?" type="search")
