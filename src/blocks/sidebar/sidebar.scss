@@ -1,50 +1,127 @@
 .sidebar {
-    width: 240rem;
-    height: 1045rem;
+    height: 100%;
     background: #F3F4F9;
+    position: relative;
+
+    .sidebar__tongue {
+        position: absolute;
+        right: -54rem;
+    }
+    @media screen and (min-width: 1440px) {
+        .sidebar__tongue {
+            display: none;
+        }
+    }
+
     .sidebar__header {
         display: flex;
         align-items: center;
-        height: 132rem;
-        margin-left: 40rem;
         .sidebar__logo {
-            width: 50rem;
-            height: 50rem;
             background: url('/logo-coupon.png') no-repeat center 40%;
             margin-right: 10rem;
             background-size: contain;
-        }  
+        }
+        @media screen and (min-width: 1440px) {
+            .sidebar__logo {
+                width: 50rem;
+                height: 50rem;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1439px) { 
+            .sidebar__logo {
+                width: 27rem;
+                height: 27rem;
+            }
+        }
+
         .sidebar__title {
             font-family: 'Conv_Poppins';
             font-weight: 500;
             font-size: 16rem;
             text-transform: uppercase;
         }
+        @media screen and (min-width: 768px) and (max-width: 1439px) {
+            .sidebar__title {
+                display: none;
+            }
+        }
+    }
+    @media screen and (min-width: 1440px) { 
+        .sidebar__header {
+            height: 132rem;
+            margin-left: 40rem;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+        .sidebar__header {
+            height: 114rem;
+            margin-left: 45rem;
+            margin-bottom: 30rem;
+        }
     }
     .sidebar__menu {
-        height: 278rem;
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
         margin-top: 20rem;
         .sidebar__item {
             display: flex;
+
             .sidebar__icon {
-                padding-left: 40rem;
                 padding-right: 12rem;
             }
+            @media screen and (min-width: 1440px) {
+                .sidebar__icon {
+                    padding-left: 40rem;
+                }
+            }
+            @media screen and (min-width: 768px) and (max-width: 1439px) { 
+                .sidebar__icon {
+                    padding-left: 46rem;
+                }
+            }
+
             .sidebar__text {
                 font-family: 'OpenSans', Arial, sans-serif;
                 font-weight: 600;
                 font-size: 16rem;
             }
+            @media screen and (min-width: 768px) and (max-width: 1439px) {
+                .sidebar__text {
+                    display: none;
+                }
+            }
+
             &:active, &:hover, &:focus{
                 color: #34ABE0;
                 border-left: 3rem solid #34ABE0;
+                box-sizing: border-box;
                 svg path {
                     stroke: #34ABE0;
                 }
             }
         }
+    }
+    @media screen and (min-width: 1440px) {
+        .sidebar__menu {
+            height: 278rem;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+        .sidebar__menu {
+            height: 298rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) { 
+    .sidebar {
+        width: 240rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .sidebar {
+        width: 118rem;
     }
 }
