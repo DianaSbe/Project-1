@@ -1,0 +1,49 @@
+html {
+    font-size: 0.89px;
+}
+.beco {
+    grid-template-columns: 118rem 750rem;
+}
+.beco__search {
+    height: 126rem;
+}
+.beco__title {
+    text-align: right;
+    margin-bottom: 37rem;
+}
+.beco__coupons {
+    grid-template-columns: repeat(2, 332rem);
+    padding: 30rem 30rem 100rem 30rem;
+}
+
+.sidebar__tongue {
+    right: -54rem;
+}
+.sidebar__header {
+    height: 114rem;
+    margin-left: 45rem;
+    margin-bottom: 30rem;
+}
+.sidebar__logo {
+    width: 27rem;
+    height: 27rem;
+}
+.sidebar__title {
+    display: none;
+}
+.sidebar__menu {
+    height: 298rem;
+}
+.sidebar__icon {
+    padding-left: 46rem;
+}
+.sidebar__text {
+    display: none;
+}
+
+.search {
+    width: 690rem;
+}
+.search__input {
+    font-size: 20rem;
+}

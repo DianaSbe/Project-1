@@ -1,0 +1,29 @@
+html {
+    font-size: 0.8px;
+}
+.beco {
+    grid-template-columns: 14rem 400rem;
+}
+.beco__search {
+    height: 126rem;
+    width: 84%;
+}
+.beco__title {
+    text-align: right;
+    margin-bottom: 26rem;
+}
+.beco__coupons {
+    grid-template-columns: repeat(1, 332rem);
+    padding: 30rem 30rem 100rem 30rem;
+}
+
+.sidebar__tongue {
+    right: -60rem;
+}
+.sidebar__title, .sidebar__icon, .sidebar__text {
+    display: none;
+}
+
+.search__input {
+    font-size: 18rem;
+}

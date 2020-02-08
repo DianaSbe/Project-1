@@ -2,9 +2,9 @@
 @import "../../blocks/search/search";
 @import "../../blocks/sidebar/sidebar";
 @import "../../blocks/coupon/coupon";
-//@import url(styles-xs.css) (max-width: 
-//@import url(styles-xs.css) (max-width: 768px);
-//@import url(styles-xs.css) (max-width: 320px);
+@import url(desktop-version.scss) screen and (min-width: 1440px);
+@import url(tablet-version.scss) screen and (min-width: 768px) and (max-width: 1439px);
+@import url(mobile-version.scss) screen and (min-width: 320px) and (max-width: 767px);
 
 .beco {
   display: grid;
@@ -13,35 +13,11 @@
   .beco__sidebar {
     grid-area: sidebar;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
-    .beco__title {
-      text-align: right;
-    }
-  }
-
   .beco__search {
     grid-area: search;
     align-self: center;
     justify-self: center;
   }
-  @media screen and (min-width: 1440px) {
-    .beco__search {
-      height: 121rem;
-      .beco__title {
-        margin-bottom: 30rem;
-      }
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
-    .beco__search {
-      height: 126rem;
-      .beco__title {
-        margin-bottom: 37rem;
-      }
-    }
-  }
-
   .beco__coupons {
     grid-area: coupons;
     display: grid;
@@ -50,28 +26,6 @@
     background-color: #FAFAFA;
     border-top: 1rem solid #E5E5E5;
     box-sizing: border-box;
-  }
-  @media screen and (min-width: 1440px) {
-    .beco__coupons {
-      grid-template-columns: repeat(3, 347rem);
-      padding: 40rem 60rem 100rem 60rem;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
-    .beco__coupons {
-      grid-template-columns: repeat(2, 332rem);
-      padding: 30rem 30rem 100rem 30rem;
-    }
-  }
-}
-@media screen and (min-width: 1440px) { 
-  .beco {
-    grid-template-columns: 240rem;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .beco {
-    grid-template-columns: 118rem 750rem;
   }
 }
 
@@ -90,22 +44,4 @@ h2 {
 }
 h3 {
   font-size: 18rem;
-}
-
-@media screen and (min-width: 1440px) {
-  html {
-    font-size: 1px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  html {
-    font-size: 0.89px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  html {
-   font-size: 0.8px;
-  }
 }

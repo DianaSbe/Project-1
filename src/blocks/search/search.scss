@@ -27,27 +27,5 @@
                 display: none;
             }
         }
-        @media screen and (min-width: 1440px) { 
-            .search__input {
-                font-size: 18rem;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1439px) {
-            .search__input {
-                font-size: 20rem;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1440px) { 
-    .search {
-        width: 1080rem;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1439px) { 
-    .search {
-        width: 690rem;
     }
 }
