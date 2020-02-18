@@ -3,24 +3,33 @@ html {
 }
 .beco {
     grid-template-columns: 240rem;
-}
-.beco__search {
-    height: 121rem;
+    grid-template-rows: 7.8%;
 }
 .beco__title {
-    margin-bottom: 30rem;
+    text-align: left;
+    min-width: 90%;
+}
+.beco__search {
+    padding: 30rem 0rem 40rem 60rem;
 }
 .beco__coupons {
     grid-template-columns: repeat(3, 347rem);
-    padding: 40rem 60rem 100rem 60rem;
+    grid-template-rows: repeat(auto-fit, 164rem);
+    padding: 3% 5% 3% 5%;
 }
 
+.sidebar {
+    width: 33.5%;
+}
 .sidebar__tongue {
     display: none;
 }
 .sidebar__header {
     height: 132rem;
     margin-left: 40rem;
+}
+.sidebar__title {
+    font-size: 16rem;
 }
 .sidebar__logo {
     width: 50rem;
@@ -31,6 +40,9 @@ html {
 }
 .sidebar__icon {
     padding-left: 40rem;
+}
+.sidebar__text {
+    font-size: 16rem;
 }
 
 .search {

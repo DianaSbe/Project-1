@@ -4,7 +4,8 @@
 //скрипты
 
 //свои скрипты
-//import './blocks/FormElements/checkbox/checkbox.js'
+import './blocks/search/search.js'
+import './blocks/sidebar/sidebar.js'
 
 // SCSS
 import './assets/scss/main.scss'

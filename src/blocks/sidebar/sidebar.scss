@@ -2,6 +2,7 @@
     height: 100%;
     background: #F3F4F9;
     position: relative;
+    transition: .2s;
     .sidebar__tongue {
         position: absolute;
     }
@@ -16,8 +17,10 @@
         .sidebar__title {
             font-family: 'Conv_Poppins';
             font-weight: 500;
-            font-size: 16rem;
             text-transform: uppercase;
+        }
+        .sidebar__title_opened {
+            display: block;
         }
     }
     .sidebar__menu {
@@ -27,18 +30,22 @@
         margin-top: 20rem;
         .sidebar__item {
             display: flex;
+            width: 100%;
+            border-left: 3rem solid #F3F4F9;
+            box-sizing: border-box;
             .sidebar__icon {
                 padding-right: 12rem;
             }
             .sidebar__text {
                 font-family: 'OpenSans', Arial, sans-serif;
                 font-weight: 600;
-                font-size: 16rem;
+            }
+            .sidebar__text_opened {
+                display: block;
             }
             &:active, &:hover, &:focus{
                 color: #34ABE0;
                 border-left: 3rem solid #34ABE0;
-                box-sizing: border-box;
                 svg path {
                     stroke: #34ABE0;
                 }
