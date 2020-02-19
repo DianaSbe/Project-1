@@ -1,24 +1,26 @@
 html {
     font-size: 0.8px;
 }
+
 .beco {
-    grid-template-columns: 15rem 386rem;
-    grid-template-rows: 3.5%;
+    grid-template-columns: 15rem auto;
+    grid-template-rows: 86rem auto;
 }
 .beco__title {
     text-align: right;
-    min-width: 84%;
+    width: 100%;
+    padding-right: 50rem;
 }
 .beco__search {
-    padding: 25rem 0rem 34rem 28rem;
+    padding: 25rem 27rem 34rem 28rem;
 }
 .beco__search_scrolled {
-    padding: 42rem 0rem 32rem 86rem;
+    padding: 42rem 27rem 32rem 86rem;
 }
 .beco__coupons {
-    grid-template-columns: repeat(1, 332rem);
+    grid-template-columns: repeat(auto-fit, minmax(332rem, 1fr));
     grid-template-rows: repeat(auto-fit, 156rem);
-    padding: 10% 10% 6% 7%;
+    padding: 40rem 25rem 120rem 25rem;
 }
 
 .sidebar {
@@ -53,12 +55,6 @@ html {
     padding-left: 20rem;
 }
 
-.search {
-    width: 93%;
-}
-.search_scrolled {
-    width: 90%;
-}
 .search__input {
     font-size: 17rem;
 }

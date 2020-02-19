@@ -98,15 +98,6 @@ module.exports = {
   resolve: {
     alias: {
       '~': PATHS.src,
-      'inputmask.dependencyLib': path.resolve(__dirname, '../node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js'),
-      'inputmask': path.resolve(__dirname, '../node_modules/inputmask/dist/inputmask.js'),
-      'jquery.inputmask': path.resolve(__dirname, '../node_modules/inputmask/dist/jquery.inputmask.js'),
-      'inputmask.numeric.extensions': path.resolve(__dirname, '../node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js'),
-      'inputmask.date.extensions': path.resolve(__dirname, '../node_modules/inputmask/lib/extensions/inputmask.date.extensions.js'),
-
-      'jquery-ui-slider': path.resolve(__dirname, '../node_modules/jquery-ui-dist/jquery-ui.js'),
-
-      'air-datepicker': path.resolve(__dirname, '../node_modules/air-datepicker/dist/js/datepicker.min.js'),
     }
   },
   plugins: [

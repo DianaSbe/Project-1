@@ -13,6 +13,7 @@
     height: 100%;
     grid-area: sidebar;
     position: fixed;
+    top: 0;
     z-index: 2;
   }
   .beco__title {
@@ -30,13 +31,16 @@
     box-sizing: border-box;
   }
   .beco__coupons {
-    height: 100%;
     grid-area: coupons;
     display: grid;
     place-items: center;
     grid-gap: 20px;
     background-color: #FAFAFA;
   }
+}
+
+body {
+  margin: 0;
 }
 
 h1,h2,h3 {

@@ -8,27 +8,8 @@
     background: #FFFFFF;
     border: 1rem solid #FFFFFF;
     box-sizing: border-box;
-    padding-top: 1rem;
     &:active, &:hover, &:focus {
         border: 1rem solid #DF212D;
-    }
-    .coupon__tringles {
-        width: 100%;
-        max-width: 346rem;
-        height: 161rem;
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .coupon__left-tringle, .coupon__right-tringle {
-            border: 3.5rem solid;
-            border-color: transparent transparent transparent rgba(0, 0, 0, 0.15);
-            border-radius: 1rem;
-            box-sizing: border-box;
-        }
-        .coupon__right-tringle {
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-        }
     }
     .coupon__content {
         padding: 14rem 0rem 14rem 19rem;
