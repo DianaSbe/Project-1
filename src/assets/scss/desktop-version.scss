@@ -7,9 +7,7 @@ html {
     grid-template-rows: 70rem auto;
 }
 .beco__title {
-    text-align: left;
-    width: 100%;
-    padding-left: 120rem;
+    padding-left: 60rem;
 }
 .beco__search {
     padding: 30rem 60rem 40rem 60rem;
@@ -27,8 +25,10 @@ html {
     display: none;
 }
 .sidebar__header {
-    height: 132rem;
+    width: 103rem;
+    height: 114rem;
     margin-left: 40rem;
+    margin-bottom: 28rem;
 }
 .sidebar__title {
     font-size: 16rem;
@@ -41,7 +41,7 @@ html {
     height: 278rem;
 }
 .sidebar__icon {
-    padding-left: 40rem;
+    padding-left: 36rem;
 }
 .sidebar__text {
     font-size: 16rem;

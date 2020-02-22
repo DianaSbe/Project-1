@@ -13,6 +13,31 @@
     }
     .coupon__content {
         padding: 14rem 0rem 14rem 19rem;
+        .coupon__title, .coupon__description, .coupon__number, .coupon__type {
+            font-family: 'Conv_Roboto';
+            font-size: 16rem;
+            text-transform: uppercase;
+            display: block;
+        }
+        .coupon__title {
+            font-weight: 600;
+            letter-spacing: 1.7rem;
+        }
+        .coupon__description {
+            color: #808080;
+            margin-bottom: 35rem;
+            text-transform: none;
+        }
+        .coupon__number {
+            font-size: 36rem;
+            font-weight: 600;
+            color: #DF212D;
+            line-height: 40rem;
+        }
+        .coupon__type {
+            letter-spacing: 6.4rem;
+            color: #808080;
+        }
     }
     .coupon__img {
         border-radius: 10px;
@@ -22,30 +47,5 @@
         user-select: none;
         max-width: 130rem;
         height: auto;
-    }
-    .coupon__title, .coupon__description, .coupon__number, .coupon__type {
-        font-family: 'Conv_Roboto';
-        font-size: 16rem;
-        text-transform: uppercase;
-        display: block;
-    }
-    .coupon__title {
-        font-weight: 600;
-        letter-spacing: 1.7rem;
-    }
-    .coupon__description {
-        color: #808080;
-        margin-bottom: 35rem;
-        text-transform: none;
-    }
-    .coupon__number {
-        font-size: 36rem;
-        font-weight: 600;
-        color: #DF212D;
-        line-height: 40rem;
-    }
-    .coupon__type {
-        letter-spacing: 6.4rem;
-        color: #808080;
     }
 }

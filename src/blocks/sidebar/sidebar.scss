@@ -2,16 +2,16 @@
     height: 100%;
     background: #F3F4F9;
     position: relative;
-    transition: .2s;
+    transition: .05s;
     .sidebar__tongue {
         position: absolute;
     }
     .sidebar__header {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         .sidebar__logo {
             background: url('../img/logo-coupon.png') no-repeat center 40%;
-            margin-right: 10rem;
             background-size: contain;
         }
         .sidebar__title {

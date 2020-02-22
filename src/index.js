@@ -9,6 +9,8 @@ import './blocks/sidebar/sidebar.js'
 
 // SCSS
 import './assets/scss/main.scss'
+import './blocks/sidebar/icon-burger.svg'
+import './blocks/sidebar/icon-exit.svg'
 
 // CSS
 // import './assets/css/main.css'

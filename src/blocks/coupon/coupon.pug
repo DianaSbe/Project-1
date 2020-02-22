@@ -5,4 +5,4 @@ mixin coupon(options)
       label.coupon__description= options.description
       label.coupon__number= options.number
       label.coupon__type= options.type
-    img.coupon__img(src=require("../../blocks/coupon/image_" + options.img + ".png"))
+    img.coupon__img(src=require('blocks' + "/coupon/image_" + options.img + ".png"))

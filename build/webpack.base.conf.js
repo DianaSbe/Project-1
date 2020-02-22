@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // Main const
 const PATHS = {
@@ -53,16 +54,26 @@ module.exports = {
       loader: 'babel-loader',
       exclude: '/node_modules/'
     }, {
-      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      test: /\.(woff(2)?|ttf|eot|svg)$/,
       loader: 'file-loader',
+      include: [
+        path.resolve(__dirname, '../src/assets/fonts'),
+      ],
       options: {
-        name: '[name].[ext]'
+        name: '[name].[ext]',
+        outputPath: 'assets/fonts',
+        publicPath: 'assets/fonts'
       }
     }, {
-      test: /\.(png|jpg|gif)$/,
+      test: /\.(png|jpg|jpeg|svg|gif)$/,
       loader: 'file-loader',
+      exclude: [
+        path.resolve(__dirname, '../src/assets/fonts'),
+      ],
       options: {
-        name: '[name].[ext]'
+        name: '[name].[ext]',
+        outputPath: 'assets/img',
+        publicPath: 'assets/img'
       }
     }, {
       test: /\.scss$/,
@@ -98,22 +109,23 @@ module.exports = {
   resolve: {
     alias: {
       '~': PATHS.src,
+      'blocks': path.resolve(__dirname, '../src/blocks')
     }
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: `${PATHS.assets}css/[name].[hash].css`,
+      filename: `[name].[hash].css`,
     }),
-    new CopyWebpackPlugin([
-      { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
-      { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
-      { from: `${PATHS.src}/static`, to: '' }
-    ]),
+     new CopyWebpackPlugin([
+      // { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
+      { from: `${PATHS.src}/static`, to: "" }
+    ]), 
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
     }),
+    new CleanWebpackPlugin(),
 
     // Automatic creation any html pages (Don't forget to RERUN dev server)
     ...PAGES.map(page => new HtmlWebpackPlugin({

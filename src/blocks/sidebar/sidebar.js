@@ -7,9 +7,9 @@ jQuery(document).ready( function($) {
             sidebartext[i].classList.toggle('sidebar__text_opened');
         }
         if ($(this).parent('.sidebar')[0].classList.contains('sidebar_opened'))
-          $(this).find('#svg-logo-tongue').attr("xlink:href", "icon-exit.svg");
+          $(this).find('#svg-logo-tongue').attr("xlink:href", "assets/img/icon-exit.svg");
         else
-          $(this).find('#svg-logo-tongue').attr("xlink:href", "icon-burger.svg");
+          $(this).find('#svg-logo-tongue').attr("xlink:href", "assets/img/icon-burger.svg");
 
         if (window.matchMedia('screen and (max-width: 767px)').matches) {
             $(this).parent('.sidebar').find('.sidebar__logo')[0].classList.toggle('sidebar__logo_opened');
@@ -19,5 +19,5 @@ jQuery(document).ready( function($) {
     });
     $('.sidebar__item').click(function() {
         $('.beco__title')[0].innerHTML = $(this).find('.sidebar__text')[0].innerHTML;
-    })
+    });
 });
